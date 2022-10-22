@@ -19,3 +19,7 @@ Permite compartir codigo entre el navegador y el servidor.
 Express forma parte de algunos stack web, por ejemplo:  MEAN o MEARN
 
 Se pueden crear aplicaciones MVC (modelo vista controlador) 
+
+## Instalación
+
+[Documentación oficial](https://www.express.com)
