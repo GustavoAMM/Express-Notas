@@ -201,5 +201,12 @@ app.use(express.json());
 app.use(logger);
 ```
 
+No **todos** los middlewares tienen que ser creados por nosotros, de hecho morgan es un middlewares que hace lo mismo que hicimos antes.
 
+Ejemplo:
+
+```
+const morgan = require("morgan");
+app.use(morgan('dev'));
+```
 
