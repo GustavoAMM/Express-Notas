@@ -182,3 +182,24 @@ Esta no es metodo http, es una función de express que para un grupo especifico 
 [Documentación de rutas en express](https://expressjs.com/en/starter/basic-routing.html)
 
 [Documentación de los enrutadores en express](https://expressjs.com/en/guide/routing.html)
+
+
+## Middleares 
+
+Es Middlewares es un manejador de peticiones antes de que llegan a su ruta final.
+A diferencia de app.all() que funcionaba para un grupo de rutas en especifico el Middlewares funciona para cualquier ruta que creemos.
+
+EJemplo:
+
+```
+function logger(req, res, next) {
+  console.log(`Route received: ${req.protocol}://${req.get("host")}${req.originalUrl}`);
+  next();
+}
+
+app.use(express.json());
+app.use(logger);
+```
+
+
+
