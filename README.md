@@ -87,7 +87,7 @@ Express:
 
 Los metodos hacen que el navegador pueda pedir o mandar determinados recursos al servidor y despues decirle que hacer con esos recursos, ejemplo: get pide algo para mostra a el cliente, post manda datos desde el navegador para que los guarde el servidor, put manda datos para actualizar ciertos datos en el servidor y delete le dice a el servidor que elimine ciertos datos que tiene almacenados. 
 
-Ejemplo de rutas tipo get:
+### Ejemplo de rutas tipo get:
 
 ```
   app.get("/", (req, res) => {
@@ -97,7 +97,8 @@ Ejemplo de rutas tipo get:
 ```
 > Sirven para devolver cosas 
 
-Ejemplo de rutas tipo post:
+
+### Ejemplo de rutas tipo post:
 
 ```
   app.post("/post", (req, res) => {
@@ -106,7 +107,8 @@ Ejemplo de rutas tipo post:
 ```
 > Sirver para recibir determinados datos y procesar o guardar datos 
 
-EJemplo de rutas tipo put:
+
+### EJemplo de rutas tipo put:
 
 ```
   app.put("/update", (req, res) => {
@@ -115,11 +117,13 @@ EJemplo de rutas tipo put:
 ```
 > Actualizar datos o administrarle logica para poder regresar al navegador
 
-Ejemplo de rutas tipo delete:
+
+### Ejemplo de rutas tipo delete:
 
 ```
   app.delete("/delete", (req, res) => {
     res.send("Petición eliminación recibida");
   });
 ```
-> Tomar la info del navegaro para poder eliminarla en el servidor y regresar una respuesta al navegador
+> Tomar la info del navegador para poder eliminarla en el servidor y regresar una respuesta al navegador
+
