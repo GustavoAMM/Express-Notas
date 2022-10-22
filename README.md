@@ -214,4 +214,13 @@ Uso:
 const morgan = require("morgan");
 app.use(morgan('dev'));
 ```
+## Static files 
 
+Es otro middleware que envia archivos estaticos al Front-End.
+
+Ejemplo:
+
+```
+app.use(express.static('public'))
+```
+> Se añade al final de las rutas y este hace referencia a la carpeta de archivos estaticos 
