@@ -24,16 +24,16 @@ Se pueden crear aplicaciones MVC (modelo vista controlador)
 
 [Documentación express](https://expressjs.com/)
 
+Instalar Express **solo** para este proyecto 
+```
+npm i express 
+```
+
 > Nota: Es de buenas practicas crear un archivo package.json ya que este archivo describe nuestro programa.
 >
 >   ```
 >   npm init -y
 >   ```
-
-Instalar Express **solo** para este proyecto 
-```
-npm i express 
-```
 
 
 ## Node vs Express (Servidor - Hola mundo)
@@ -97,7 +97,7 @@ Ejemplo: get pide algo para mostra a el cliente, post manda datos desde el naveg
   });
 
 ```
-#### Otro ejemplo tipo get(Json):
+#### Otro ejemplo tipo get (Json):
 ```
   app.get("/user", (req, res) => {
     res.json({
@@ -141,7 +141,7 @@ Ejemplo: get pide algo para mostra a el cliente, post manda datos desde el naveg
     res.send("Petición actualización recibida");
   });
 ```
-### Otro ejemplo tipo put (con parametros):
+#### Otro ejemplo tipo put (con parametros):
 
 ```
   app.put("/update/:id", (req, res) => {
@@ -159,7 +159,7 @@ Ejemplo: get pide algo para mostra a el cliente, post manda datos desde el naveg
     res.send("Petición eliminación recibida");
   });
 ```
-### Otro ejemplo tipo delete (con parametros):
+#### Otro ejemplo tipo delete (con parametros):
 ```
   app.delete("/delete/:userId", (req, res) => {
     res.send(`usuario ${req.params.userId} deleted`);
