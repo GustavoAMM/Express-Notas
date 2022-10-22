@@ -68,3 +68,29 @@ Express:
     console.log("server on port 3000");
   });
 ```
+
+## Nodemon 
+
+ Para no estar que reiniciar la consola cada vez que se hace un cambio es recomendable instalar nodemon
+ ```
+ npm i nodemon -D
+ ```
+ Con el -D le digo que solo va a ser para el entorno de desarrollo y no de producción 
+ 
+ Para correr ahora el proyecto es:
+ ```
+   npx nodemon nombre_del_archivo.js
+ ```
+
+
+## Express routing 
+
+Ejemplo de rutas tipo get:
+
+```
+  app.get("/about", (req, res) => {
+    res.send("About me");
+  });
+
+```
+
