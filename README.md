@@ -204,6 +204,7 @@ app.use(logger);
 No **todos** los middlewares tienen que ser creados por nosotros, de hecho morgan es un middlewares que hace lo mismo que hicimos antes.
 
 Ejemplo:
+
 Instalación:
 ```
 npm i morgan 
