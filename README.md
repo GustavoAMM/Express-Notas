@@ -106,6 +106,11 @@ Otro ejemplo(Json):
   });
 ```
 > Sirven para devolver cosas 
+> Nota: Node no es capaz de leer objetos de tipo Json pero con express podemos solucionarlo:
+>  ```
+> app.use(express.json())
+>  ```
+
 
 
 ### Ejemplo de rutas tipo post:
@@ -115,7 +120,7 @@ Otro ejemplo(Json):
     res.send("Petición post recibida");
   });
 ```
-> Sirver para recibir determinados datos y procesar o guardar datos
+> Otro ejemplo(con condicionales)
 ```
   app.post("/user/:id", (req, res) => {
     console.log(req.body)
@@ -123,10 +128,7 @@ Otro ejemplo(Json):
     res.send("Petición post recibida");
   });
 ```
-> Nota: Node no es capaz de leer objetos de tipo Json pero con express podemos solucionarlo:
->  ```
-> app.use(express.json())
->  ```
+> Sirver para recibir determinados datos y procesar o guardar datos
 
 
 ### EJemplo de rutas tipo put:
