@@ -95,6 +95,16 @@ Los metodos hacen que el navegador pueda pedir o mandar determinados recursos al
   });
 
 ```
+Otro ejemplo(Json):
+```
+  app.get("/user", (req, res) => {
+    res.json({
+      nombre:"angel",
+      apellido:"montoya",
+      age:20
+    });
+  });
+```
 > Sirven para devolver cosas 
 
 
@@ -105,7 +115,18 @@ Los metodos hacen que el navegador pueda pedir o mandar determinados recursos al
     res.send("Petición post recibida");
   });
 ```
-> Sirver para recibir determinados datos y procesar o guardar datos 
+> Sirver para recibir determinados datos y procesar o guardar datos
+```
+  app.post("/user/:id", (req, res) => {
+    console.log(req.body)
+    console.log(req.params)
+    res.send("Petición post recibida");
+  });
+```
+> Nota: Node no es capaz de leer objetos de tipo Json pero con express podemos solucionarlo:
+>  ```
+> app.use(express.json())
+>  ```
 
 
 ### EJemplo de rutas tipo put:
