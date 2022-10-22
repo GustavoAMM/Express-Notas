@@ -236,5 +236,13 @@ app.set('appName','AngelExpress')
 app.set('port','3000')
 
 ```
+Uso:
+```
+app.listen(app.get('port'), () => {
+  console.log(app.get('appName'))
+  console.log("server on port 3000");
+});
+
+```
 
 > El primer numero es el nombre del *variable* y el segundo el valor 
