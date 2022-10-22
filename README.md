@@ -224,3 +224,17 @@ Ejemplo:
 app.use(express.static('public'))
 ```
 > Se añade al final de las rutas y este hace referencia a la carpeta de archivos estaticos 
+
+## Settings 
+
+Son similares a variables en cualquier lenguaje:
+
+Ejemplo:
+
+```
+app.set('appName','AngelExpress')
+app.set('port','3000')
+
+```
+
+> El primer numero es el nombre del *variable* y el segundo el valor 
