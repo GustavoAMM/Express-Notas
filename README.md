@@ -178,3 +178,5 @@ Esta no es metodo http, es una función de express que para un grupo especifico 
   });
 
 ```
+
+[Documentación de rutas en express](https://expressjs.com/es/guide/routing.html)
