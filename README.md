@@ -95,7 +95,7 @@ Los metodos hacen que el navegador pueda pedir o mandar determinados recursos al
   });
 
 ```
-Otro ejemplo(Json):
+### Otro ejemplo(Json):
 ```
   app.get("/user", (req, res) => {
     res.json({
@@ -105,8 +105,9 @@ Otro ejemplo(Json):
     });
   });
 ```
-> Sirven para devolver cosas 
-> Nota: Node no es capaz de leer objetos de tipo Json pero con express podemos solucionarlo:
+> Sirven para devolver cosas
+>
+> Nota: Node no es capaz de leer objetos de tipo Json pero con express podemos solucionarlo(Se debe poner antes de todas las rutas):
 >  ```
 > app.use(express.json())
 >  ```
@@ -120,7 +121,7 @@ Otro ejemplo(Json):
     res.send("Petición post recibida");
   });
 ```
-> Otro ejemplo(con condicionales)
+#### Otro ejemplo tipo post (con condicionales)
 ```
   app.post("/user/:id", (req, res) => {
     console.log(req.body)
