@@ -95,4 +95,31 @@ Ejemplo de rutas tipo get:
   });
 
 ```
+> Sirven para devolver cosas 
 
+Ejemplo de rutas tipo post:
+
+```
+  app.post("/post", (req, res) => {
+    res.send("Petición post recibida");
+  });
+```
+> Sirver para recibir determinados datos y procesar o guardar datos 
+
+EJemplo de rutas tipo put:
+
+```
+  app.put("/update", (req, res) => {
+    res.send("Petición actualización recibida");
+  });
+```
+> Actualizar datos o administrarle logica para poder regresar al navegador
+
+Ejemplo de rutas tipo delete:
+
+```
+  app.delete("/delete", (req, res) => {
+    res.send("Petición eliminación recibida");
+  });
+```
+> Tomar la info del navegaro para poder eliminarla en el servidor y regresar una respuesta al navegador
