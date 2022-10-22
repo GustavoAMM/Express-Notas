@@ -167,3 +167,14 @@ Ejemplo: get pide algo para mostra a el cliente, post manda datos desde el naveg
 ```
 > Tomar la info del navegador para poder eliminarla en el servidor y regresar una respuesta al navegador
 
+### Ejemplo de ruta tipo all:
+
+Esta no es metodo http, es una función de express que para un grupo especifico de rutas, este hace algo antes de que llegue ahí.
+
+```
+  app.all(`/user`, (req, res, next) => {
+    console.log("Por qui paso");
+    next();
+  });
+
+```
