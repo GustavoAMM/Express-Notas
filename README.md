@@ -246,3 +246,19 @@ app.listen(app.get('port'), () => {
 ```
 
 > El primer numero es el nombre del *variable* y el segundo el valor 
+
+## Motor de plantillas
+
+Nos ayuda a extender el html en nuestras acplicaciones web en express es muy comun utilizar ejs.
+
+Instalar:
+
+```
+npm i ejs
+```
+
+Uso:
+
+```
+app.set('view engine','ejs')
+```
