@@ -22,4 +22,34 @@ Se pueden crear aplicaciones MVC (modelo vista controlador)
 
 ## Instalación
 
-[Documentación oficial](https://www.express.com)
+[Documentación express](https://expressjs.com/)
+
+> Nota: Es de buenas practicas crear un archivo package.json ya que este archivo describe nuestro programa.
+>
+>   ```
+>   npm init -y
+>   ```
+
+Instalar Express **solo** para este proyecto 
+```
+npm i express 
+```
+
+
+## Node vs Express (Servidor - Hola mundo)
+
+Node:
+
+```
+  const http = require("http");
+
+  const server = http.createServer((req, res) => {
+    res.status = 200;
+    res.setHeader("content-Type", "text/plain");
+    res.end("hello world");
+  });
+
+  server.listen(3000,()=>{
+    console.log("server on port 3000")
+  })
+```
