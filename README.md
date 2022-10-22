@@ -95,7 +95,7 @@ Los metodos hacen que el navegador pueda pedir o mandar determinados recursos al
   });
 
 ```
-### Otro ejemplo(Json):
+#### Otro ejemplo tipo get(Json):
 ```
   app.get("/user", (req, res) => {
     res.json({
@@ -121,7 +121,7 @@ Los metodos hacen que el navegador pueda pedir o mandar determinados recursos al
     res.send("Petición post recibida");
   });
 ```
-#### Otro ejemplo tipo post (con condicionales)
+#### Otro ejemplo tipo post (con condicionales):
 ```
   app.post("/user/:id", (req, res) => {
     console.log(req.body)
